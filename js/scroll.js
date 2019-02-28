@@ -1,0 +1,1 @@
+ScrollReveal().reveal('.logo', { delay: 500 });

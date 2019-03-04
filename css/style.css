@@ -1,15 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:300,300i,400,400i,500,500i,600,600i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Mogra');
-@import url('http://weloveiconfonts.com/api/?family=entypo');
 
-body {
-  margin: 0 auto;
-  color: white;
-  font-family: 'Bai Jamjuree', sans-serif;
-}
 
-/*
+/* COLORS 
+
 dk-green #127962
 green #1BB996
 lt-green #29E8BC
@@ -24,8 +18,14 @@ dk-gray #2A2A2E
 med-gray #D1CFD7
 lt-gray #F6F6F8
 
-
 */
+
+body {
+  margin: 0 auto;
+  color: white;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
 
 h1, h2, h3, h4, h5 {
 /*  font-family: 'Mogra', Helvetica, sans-serif;
@@ -35,11 +35,36 @@ h1 {
   font-size: 2.8em;
 }
 
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .section {
   margin: 0 auto;
   text-align: center;
   padding: 4em 2em;
 }
+
+a.button {
+  padding: 15px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: #FBC700;
+  border-bottom: 4px solid #BC9B1E;
+  color: #2A2A2E;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+a.button:hover {
+  background-color: #BC9B1E;
+  border-bottom: transparent;
+  border-bottom: 4px solid #2A2A2E;
+}
+
+
+/* HERO SECTION */
 
 .section.hero {
   padding: 2em;
@@ -65,7 +90,8 @@ h1 {
   margin-bottom:10px;
 }
 
-.section.hero i {
+.section.hero p {
+  font-style: italic;
   font-size: 1.1em;
   margin-top:0;
 }
@@ -73,27 +99,11 @@ h1 {
 .section.hero h2 > a {
   text-decoration: none;
   color: white;
+  font-weight: normal;
 }
 
 .section.hero h2 > a:hover {
   color: #23238C;
-}
-
-a.button {
-  font-weight: 600;
-  padding: 15px 25px;
-  border-radius: 25px;
-  cursor: pointer;
-  border: 1px solid transparent;
-  background-color: #FBC700;
-  border-bottom: 4px solid #BC9B1E;
-  color: #2A2A2E;
-  text-decoration: none;
-}
-a.button:hover {
-  background-color: #BC9B1E;
-  border-bottom: transparent;
-  border-bottom: 4px solid #2A2A2E;
 }
 
 .flex-container {
@@ -103,7 +113,6 @@ a.button:hover {
   align-items: center;
   justify-content: space-around;
 }
-
 
 .flex-item {
   text-align: left;
@@ -125,8 +134,7 @@ a.button:hover {
   margin: 0;
 }
 
-
-
+/* PHOTOS SECTION - TBD */
 
 .section.photos {
   display: flex;
@@ -142,11 +150,7 @@ a.button:hover {
   height: 20px;
   padding:10px;
 }
-
-/*.section.photo img {
-  background-size: cover;
-  flex: 25%;
-}*/
+/* ABOUT SECTION */
 
 .section.about {
   background: #2A2A2E;
@@ -155,6 +159,38 @@ a.button:hover {
   color: #29E8BC
 }
 
+/* SPONSOR SECTION */
+
+.section.sponsors {
+  background-color: #23238C;
+}
+.section.sponsors h1 {
+  color: #FBC700;
+}
+.sponsors img.logo{
+  max-height: 100px ;
+  margin: 40px;
+
+  background-color: transparent;
+  border-radius: 3px;
+  -webkit-filter: brightness(0) invert(1);
+}
+
+.sponsors img.logo:hover{
+  -webkit-filter: none;
+}
+.section.sponsors p {
+  font-size: 1.1em;
+}
+.section.sponsors a {
+  color: #1BB996;
+}
+.section.sponsors a:hover {
+  color: #127962;
+}
+
+/* FAQ SECTION */
+
 .section.faq {
   background: #BABAED;
 }
@@ -162,6 +198,16 @@ a.button:hover {
   color: #23238C;
 }
 
+.section.faq p {
+  font-size: 1.1em;
+  color: #2A2A2E;
+}
+.section.faq a {
+  color: #23238C;
+}
+.section.faq a:hover {
+  color: #1BB996;
+}
 .faq > .flex-container {
   flex-direction: vertical;
 }
@@ -197,10 +243,11 @@ a.button:hover {
 }
 
 .flex-card{
+  text-align: left;
   background-color: white;
   border-bottom: 4px solid #ddd;
   border-right: 4px solid #ddd;
-  padding: 10px;
+  padding: 15px;
   margin: 10px;
 }
 
@@ -209,44 +256,33 @@ a.button:hover {
   color: #23238C;
 }
 .flex-card p {
+  font-size: .8em;
   color: #2A2A2E;
 }
-.section.sponsors {
-  background-color: #23238C;
+.section.faq .flex-card a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1BB996;
 }
-.section.sponsors h1 {
-  color: #FBC700;
-}
-.sponsors img.logo{
-  max-height: 100px ;
-  margin: 40px;
-
-  background-color: transparent;
-  border-radius: 3px;
-  -webkit-filter: brightness(0) invert(1);
+.section.faq .flex-card a:hover {
+  color: #23238C;
 }
 
-.sponsors img.logo:hover{
-  -webkit-filter: none;
-}
 
 /* FOOTER */
-.bottom {
-  position:relative;
-  background-color: #363636;
-  text-align: left;
-  padding: 5em 2em 1em;
-}
 
 .footer {
-  position: absolute;
-  bottom: 10px;
+  background-color: #363636;
+  text-align: left;
+  padding: 5em 2em 2em;
 }
 .footer a {
-  color: #29E8BC;
-  font-size:1.2em;
-  margin-right:.5em;
+  color: #1BB996;
+  font-size:1.7em;
 }
 .footer a:hover {
   color:#127962;
+}
+.footer small {
+  margin-left: 20px;
 }

@@ -1,44 +1,312 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:300,300i,400,400i,500,500i,600,600i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Mogra');
-@import url('http://weloveiconfonts.com/api/?family=entypo');
+
+
+/* COLORS 
+
+dk-green #127962
+green #1BB996
+lt-green #29E8BC
+
+dk-yellow #BC9B1E
+yellow #FBC700
+
+lt-blue #BABAED
+blue #23238C
+
+dk-gray #2A2A2E
+med-gray #D1CFD7
+lt-gray #F6F6F8
+
+*/
 
 body {
   margin: 0 auto;
   color: white;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5 {
+/*  font-family: 'Mogra', Helvetica, sans-serif;
+*/}
+
+h1 {
+  font-size: 2.8em;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  margin: 0 auto;
+  text-align: center;
+  padding: 4em 2em;
+}
+
+a.button {
+  padding: 15px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: #FBC700;
+  border-bottom: 4px solid #BC9B1E;
+  color: #2A2A2E;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+a.button:hover {
+  background-color: #BC9B1E;
+  border-bottom: transparent;
+  border-bottom: 4px solid #2A2A2E;
+}
+
+
+/* HERO SECTION */
+
+.section.hero {
+  padding: 2em;
   background-image: linear-gradient(to bottom right, #127962, #1bb996, #29E8BC);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center top;
-  background-color: #ddd;
-  height: 100vh;
+  background-color:green;
+}
+
+.hero-img {
+  width: 250px;
+  margin:30px 0;
+}
+
+.section.hero h1 {
+  font-size: 3.2em;
+}
+
+.section.hero h2 {
+  font-weight: normal;
+  font-size: 1.6em;
+  margin-bottom:10px;
+}
+
+.section.hero p {
+  font-style: italic;
+  font-size: 1.1em;
+  margin-top:0;
+}
+
+.section.hero h2 > a {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+}
+
+.section.hero h2 > a:hover {
+  color: #23238C;
 }
 
 .flex-container {
+  margin: 0 auto;
+  max-width: 800px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-.main-content {
-  padding: 3em;
-  border: 3px solid white;
-  text-align: center;
-  max-width: 50%;
+  justify-content: space-around;
+  flex-wrap:wrap;
 }
 
-.main-content h1 {
-  font-family: 'Mogra', Helvetica, sans-serif;
-  font-size: 2.6em;
-  color: white
+.flex-item {
+  text-align: left;
+  display: block;
+  margin: 20px;
 }
 
-.main-content p {
-  font-size: 1.2em;
+.flex-item.sm {
+  flex-basis: 33%;
+  text-align: right;
+}
+.flex-item.lg {
+  flex-basis: 66%;
+}
+
+
+.flex-item h1 {
   color: white;
+  margin: 0;
 }
 
-.main-content small {
-  font-size: .7em;
-  font-style: italic;
+/* PHOTOS SECTION - TBD */
+
+.section.photos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.section.photos.photo {
+  flex: 25%;
+  max-width: 25%;
+  background-color: blue;
+  margin: 4px;
+  height: 20px;
+  padding:10px;
+}
+/* ABOUT SECTION */
+
+.section.about {
+  background: #2A2A2E;
+}
+.section.about h1 {
+  color: #29E8BC
+}
+
+/* SPONSOR SECTION */
+
+.section.sponsors {
+  background-color: #23238C;
+}
+.section.sponsors.flex-container {
+  flex-shrink: 1;
+}
+.section.sponsors h1 {
+  color: #FBC700;
+}
+.sponsors img.logo{
+  max-height: 100px ;
+  margin: 40px;
+  max-width:90%;
+
+  background-color: transparent;
+  border-radius: 3px;
+  -webkit-filter: brightness(0) invert(1);
+}
+
+.sponsors img.logo:hover{
+  -webkit-filter: none;
+}
+.section.sponsors p {
+  font-size: 1.1em;
+}
+.section.sponsors a {
+  color: #1BB996;
+}
+.section.sponsors a:hover {
+  color: #127962;
+}
+
+/* FAQ SECTION */
+
+.section.faq {
+  background: #BABAED;
+}
+.section.faq h1 {
+  color: #23238C;
+}
+
+.section.faq p {
+  font-size: 1.1em;
+  color: #2A2A2E;
+}
+.section.faq a {
+  color: #23238C;
+}
+.section.faq a:hover {
+  color: #1BB996;
+}
+.faq > .flex-container {
+}
+
+/*.flex-container {
+    display: flex;
+    justify-content: space-between;
+    max-width:800px;
+/*    height: 40rem;
+}*/
+.flex-col {
+    flex-grow: 0;
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-background {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.card-background.medium {
+    flex-grow: 1.5
+}
+
+.card-background.large {
+    flex-grow: 2
+}
+
+.card-wrapper {
+    height: 100%;
+}
+
+.flex-card{
+  text-align: left;
+  background-color: white;
+  border-bottom: 4px solid #ddd;
+  border-right: 4px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+}
+
+.flex-card h4{
+  font-family: 'Bai Jamjuree', monospace;
+  color: #23238C;
+}
+.flex-card p {
+  font-size: .8em;
+  color: #2A2A2E;
+}
+.section.faq .flex-card a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1BB996;
+}
+.section.faq .flex-card a:hover {
+  color: #23238C;
+}
+
+
+/* FOOTER */
+
+.footer {
+  background-color: #363636;
+  text-align: left;
+  padding: 5em 2em 2em;
+}
+.footer a {
+  color: #1BB996;
+  font-size:1.7em;
+}
+.footer a:hover {
+  color:#127962;
+}
+.footer small {
+  margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .flex-item.lg,
+    .flex-item.sm {
+      text-align:center;
+      flex-basis: 100%;
+    }
+    .section {
+      padding: 3em 1em;
+    }
+    .flex-col {
+      width: 100%;
+    }
+
+    .footer small {
+      margin:10px 0 0 0;
+      display:block;
+    }
 }

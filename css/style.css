@@ -112,6 +112,7 @@ a.button:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap:wrap;
 }
 
 .flex-item {
@@ -164,12 +165,16 @@ a.button:hover {
 .section.sponsors {
   background-color: #23238C;
 }
+.section.sponsors.flex-container {
+  flex-shrink: 1;
+}
 .section.sponsors h1 {
   color: #FBC700;
 }
 .sponsors img.logo{
   max-height: 100px ;
   margin: 40px;
+  max-width:90%;
 
   background-color: transparent;
   border-radius: 3px;
@@ -209,7 +214,6 @@ a.button:hover {
   color: #1BB996;
 }
 .faq > .flex-container {
-  flex-direction: vertical;
 }
 
 /*.flex-container {
@@ -223,8 +227,9 @@ a.button:hover {
     height: 100%;
     width: 33%;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
+
 .card-background {
     flex-basis: 0;
     flex-grow: 1;
@@ -285,4 +290,23 @@ a.button:hover {
 }
 .footer small {
   margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .flex-item.lg,
+    .flex-item.sm {
+      text-align:center;
+      flex-basis: 100%;
+    }
+    .section {
+      padding: 3em 1em;
+    }
+    .flex-col {
+      width: 100%;
+    }
+
+    .footer small {
+      margin:10px 0 0 0;
+      display:block;
+    }
 }

@@ -2,7 +2,7 @@
 !!!~~~
 
 ## todo 
-* parental consent form
-* card layout for FAQs
 * sponsorship levels support
 * nav bar
+* adding photos from last year
+* sponsorship prospectus on site

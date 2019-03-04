@@ -112,7 +112,6 @@ a.button:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap:wrap;
 }
 
 .flex-item {
@@ -260,8 +259,8 @@ a.button:hover {
   font-family: 'Bai Jamjuree', monospace;
   color: #23238C;
 }
-.flex-card p {
-  font-size: .8em;
+.section.faq .flex-card p {
+  font-size: 1em;
   color: #2A2A2E;
 }
 .section.faq .flex-card a {
@@ -293,6 +292,10 @@ a.button:hover {
 }
 
 @media (max-width: 600px) {
+
+.flex-container {
+  flex-wrap: wrap;
+}
     .flex-item.lg,
     .flex-item.sm {
       text-align:center;

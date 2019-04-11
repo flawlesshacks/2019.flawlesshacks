@@ -188,18 +188,72 @@ a.button:hover {
   color: #29E8BC
 }
 
+/* SCHEDULE SECTION */
+
+.section.schedule {
+  background: #FBC700;
+}
+.schedule-time {
+  color: #23238C;
+  font-weight: 700;
+}
+.schedule-event {
+  color: #2A2A2E;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.workshop {
+  background-color: #1BB996;
+  font-size: .7em;
+  font-weight: 500;
+  color:white;
+  padding: 1px 5px;
+  margin-right: 5px;
+}
+
+/* SPEAKER SECTION */
+.section.speakers {
+  background-color: #23238C;
+}
+.section.speakers h1 {
+  color: #FBC700;
+}
+
+.speakers a {
+  color: #BABAED;
+}
+
+.speakers a:hover {
+  color: #FBC700;
+}
+
+.speakers img{
+  max-height: 150px ;
+  background-color: transparent;
+  border-radius: 50%;
+  object-fit: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.speakers img:hover{
+  filter:none;
+}
+
+
 /* SPONSOR SECTION */
 
 .section.sponsors {
-  background-color: #23238C;
+  background: #2A2A2E;
+}
+.section.sponsors h1 {
+  color: #29E8BC
 }
 .section.sponsors.flex-container {
   flex-shrink: 1;
 }
 
-.section.sponsors h1 {
-  color: #FBC700;
-}
+
 .sponsors img.logo{
   max-height: 110px ;
   margin: 40px;

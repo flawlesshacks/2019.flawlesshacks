@@ -203,7 +203,7 @@ a.button:hover {
   margin-bottom: 10px;
 }
 .workshop {
-  background-color: #1BB996;
+  background-color: #23238C;
   font-size: .7em;
   font-weight: 500;
   color:white;
@@ -225,6 +225,15 @@ a.button:hover {
 
 .speakers a:hover {
   color: #FBC700;
+}
+.speakers h2 {
+  color: #BABAED;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.speakers h3 {
+  margin: 4px 0 8px;
+  font-style: italic;
 }
 
 .speakers img{

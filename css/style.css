@@ -193,6 +193,9 @@ a.button:hover {
 .section.schedule {
   background: #FBC700;
 }
+.schedule a {
+  color: #2A2A2E;
+}
 .schedule-time {
   color: #23238C;
   font-weight: 700;
@@ -248,6 +251,84 @@ a.button:hover {
 .speakers img:hover{
   filter:none;
 }
+/* WORKSHOP SECTION */
+.section.workshops {
+  background-color: #29E8BC;
+  color:#2A2A2E;
+}
+.section.workshops h1 {
+  color: #2A2A2E;
+}
+.workshops .workshop {
+  padding:10px;
+  font-size: .85em;
+  margin-bottom:20px;
+}
+.workshops .flex-container{
+  background-color:white;
+  color: #2A2A2E;
+  margin-bottom: 10px;
+}
+.workshops .flex-item{
+  margin: 0;
+  padding: 20px;
+}
+.workshops .flex-item.sm {
+  flex-basis:16%;
+  align-self:flex-start;
+}
+.workshops .flex-item.sm.intro {
+  text-align: left;
+}
+.workshops .flex-item.lg {
+  align-self:flex-start;
+  border-left: 1px solid #D1CFD7;
+}
+.workshops a {
+  color: #BABAED;
+}
+.workshops h2.workshop-time {
+  font-size:1em;
+  font-color:#ddd;
+}
+
+.workshops a:hover {
+  color: #FBC700;
+}
+.workshops h2 {
+  margin-top: 0;
+  color: #1BB996;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.workshops h3 {
+  margin-top:30px;
+  font-size:1em;
+}
+.workshops h4 {
+  margin-top: 0;
+  color: #D1CFD7;
+  font-style: italic;
+}
+
+.workshops p {
+  font-size:.85em;
+}
+.workshops.flex-item.sm {
+  align-self:baseline;
+}
+.workshops img{
+  max-height: 120px ;
+  background-color: transparent;
+  border-radius: 50%;
+  object-fit: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.workshops img:hover{
+  filter:none;
+}
 
 
 /* SPONSOR SECTION */
@@ -265,7 +346,7 @@ a.button:hover {
 
 .sponsors img.logo{
   max-height: 110px ;
-  margin: 40px;
+  margin: 30px;
   max-width:90%;
 
   background-color: transparent;
@@ -273,7 +354,7 @@ a.button:hover {
   -webkit-filter: brightness(0) invert(1);
 }
 
-.silver .sponsors img.logo {
+.silver img.logo {
   max-height: 80px;
 }
 
@@ -415,4 +496,20 @@ a.button:hover {
       max-width: 50%;
       height:120px;
     }
+
+  .workshops .flex-item.lg {
+    padding: 15px;
+    border-left: transparent;
+    border-top: 1px solid #BC9B1E;
+  }
+
+  .workshops .flex-item.sm {
+    display:inline-flex;
+    flex-basis: 100%;
+    align-content: center;
+    margin: 10px;
+  }
+  .workshops .flex-item.sm > * {
+    margin: 0 10px;
+  }
 }
